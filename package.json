@@ -1,0 +1,26 @@
+{
+  "name": "php-ajax-dischi",
+  "version": "1.0.0",
+  "description": "php-ajax-dischi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MastroJoe/php-ajax-dischi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MastroJoe/php-ajax-dischi/issues"
+  },
+  "homepage": "https://github.com/MastroJoe/php-ajax-dischi#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.18",
+    "postcss": "^8.1.14",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1"
+  }
+}
