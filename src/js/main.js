@@ -6,6 +6,7 @@ var app = new Vue(
     data: {
       albums: [],
     },
+    
     // mounted() {
     //   axios.get('https://flynn.boolean.careers/exercises/api/array/music')
     //   .then((response) => {
