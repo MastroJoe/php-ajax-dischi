@@ -6,10 +6,10 @@
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ff9f8d;
 }
 
 .container {
@@ -32,6 +32,7 @@
 .card {
   background-color: transparent;
   width: calc(100% / 5 - 20px);
+  height: 360px;
   margin: 10px 10px;
   perspective: 1000px;
   cursor: pointer;
@@ -62,12 +63,12 @@
 .card-front {
   width: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
 }
 
 .card-back {
-  background-color: #ffb88d;
-  color: #ff9523;
+  background-color: #ae8652;
+  color: #eae8e6;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -323,4 +324,10 @@
 .mtb-120 {
   margin-top: 120px;
   margin-bottom: 120px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #505050;
 }

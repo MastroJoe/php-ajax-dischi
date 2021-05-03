@@ -20,6 +20,7 @@
 .card {
   background-color: transparent;
   width: calc(100% / 5 - 20px);
+  height: 360px;
   margin: 10px 10px;
   perspective: 1000px;
   cursor: pointer;
@@ -49,12 +50,12 @@
 .card-front {
 width: 100%;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: round;
 }
 
 .card-back {
-  background-color: #ffb88d;
-  color: #ff9523;
+  background-color: $color-wood;
+  color: $color-lightergrey;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
