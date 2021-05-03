@@ -5,7 +5,7 @@
   font-family: "Product Sans", Arial, sans-serif;
 }
 
-#root {
+.container-root {
   height: 100%;
   width: 100%;
   display: flex;
