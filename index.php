@@ -1,6 +1,6 @@
 <?php
   include_once __DIR__.'/data.php';
- ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,27 +18,28 @@
   <!-- MAIN -->
   <main>
     <div class="container-root">
-      
+
       <!-- CARDS -->
       <?php
       foreach ($albums as $disk) {
       ?>
       <div class="card">
         <div class="card-cover">
-          <div class="card-front" style="background-image: url('<?= $disk['poster'] ?>')">
+          <div class="card-front"
+               style="background-image: url('<?= $disk['poster'] ?>')">
+          </div>
+          <div class="card-back">
+            <h1><?= $disk['title'] ?></h1>
+            <h2><?= $disk['author'] ?></h2>
+            <p><?= $disk['year'] ?></p>
+            <br>
+            <p class="genre">
+              <?= $disk['genre'] ?>
+            </p>
           </div>
         </div>
-        <div class="card-back">
-          <h1><?= $disk['title'] ?></h1>
-          <h2><?= $disk['author'] ?></h2>
-          <p><?= $disk['year'] ?></p>
-          <br>
-          <p class="genre">
-            <?= $disk['genre'] ?>
-          </p>
-        </div>
       </div>
-      <?php } ?>
+    <?php } ?>
 
     </div>
   </main>
