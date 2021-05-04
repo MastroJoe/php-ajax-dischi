@@ -19,11 +19,11 @@ var app = new Vue({
   //     this.albums = response.data.response;
   //   });
   // }
-  // Chiamata per data degli albums PHP
+  // chiamata database PHP
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('./call.php').then(function (response) {
+    axios.get('http://localhost/php/php-ajax-dischi/api/music.php').then(function (response) {
       _this.albums = response.data.response;
     });
   }

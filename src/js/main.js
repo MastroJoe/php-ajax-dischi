@@ -6,7 +6,6 @@ var app = new Vue(
     data: {
       albums: [],
     },
-    
     // mounted() {
     //   axios.get('https://flynn.boolean.careers/exercises/api/array/music')
     //   .then((response) => {
@@ -14,12 +13,12 @@ var app = new Vue(
     //   });
     // }
 
-    // Chiamata per data degli albums PHP
+    // chiamata database PHP
     mounted() {
-    axios.get('./call.php')
-    .then((response) => {
-      this.albums = response.data.response;
+      axios.get('http://localhost/php/php-ajax-dischi/api/music.php')
+      .then((response) => {
+        this.albums = response.data.response;
       });
-    },
+    }
   }
 );

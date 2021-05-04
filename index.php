@@ -1,5 +1,5 @@
 <?php
-  include './data.php';
+  include_once __DIR__.'/data.php';
  ?>
 
 <!DOCTYPE html>
@@ -18,21 +18,23 @@
   <!-- MAIN -->
   <main>
     <div class="container-root">
-
+      
+      <!-- CARDS -->
       <?php
-      foreach ($albums as $key => $value) {
+      foreach ($albums as $disk) {
       ?>
       <div class="card">
         <div class="card-cover">
-          <div class="card-front" style="background-image: url('<?= $value['poster'] ?>')">
+          <div class="card-front" style="background-image: url('<?= $disk['poster'] ?>')">
+          </div>
         </div>
         <div class="card-back">
-          <h1><?= $value['title'] ?></h1>
-          <h2><?= $value['author'] ?></h2>
-          <p><?= $value['year'] ?></p>
+          <h1><?= $disk['title'] ?></h1>
+          <h2><?= $disk['author'] ?></h2>
+          <p><?= $disk['year'] ?></p>
           <br>
           <p class="genre">
-            <?= $value['genre'] ?>
+            <?= $disk['genre'] ?>
           </p>
         </div>
       </div>
@@ -40,10 +42,6 @@
 
     </div>
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script> -->
-  <script src="dist/js/main.js"></script>
 </body>
 </html>
 
